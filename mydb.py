@@ -3,13 +3,13 @@ import pymysql
 dataBase = pymysql.connect(
     host = 'localhost',
     user = 'root',
-    passwd = 'Alvin2256.',
+    passwd = '',
 )
 
 # prepare cursor object
 cursorObject = dataBase.cursor()
 
 # create database
-cursorObject.execute("CREATE DATABASE crmdatabase")
+cursorObject.execute("CREATE DATABASE {database name}")
 
 print("All Done!!")
